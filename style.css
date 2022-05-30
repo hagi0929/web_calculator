@@ -1,9 +1,15 @@
 .display {
 
 }
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .numpad div {
-    width: 200px;
-    background-color: #ECEFF1;
+    width: 250px;
     display: flex;
     justify-content: center;
 
@@ -20,11 +26,8 @@
 .numpad div div:hover{
     background-color: #CFD8DC;
 }
-#button0 {
-    width: 100px;
-}
 input[type=text] {
-    width: 200px;
+    width: 250px;
     height: 50px;
     font-size: 30px;
     box-sizing: border-box;
@@ -37,16 +40,27 @@ input[type=text]:focus {
     outline: none;
 }
 #enter {
+    width: 100px;
+}
+#button0{
+    width: 100px;
+}
+#button_delete {
     display: flex;
+    width: 100px;
     height: 50px;
     font-size: 30px;
     align-items: center;
     justify-content: center;
     user-select: none
 }
-#enter:hover{
-    background-color: #CFD8DC;
-}
 .input-error{
     outline: 1px solid red;
+}
+.main {
+    background-color: #ECEFF1;
+    border: 1px solid black;
+}
+#display {
+    user-select: none
 }

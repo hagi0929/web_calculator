@@ -19,7 +19,7 @@ function reset(){
     document.getElementById("display").value = 0;
 }
 function calculate(rcv){
-    document.getElementById("display").value = eval(rcv);
+    document.getElementById("display").value = String(eval(rcv));
 }
 document.getElementById('enter').addEventListener('click', function () {
     let eq = document.getElementById("display").value;
@@ -59,6 +59,9 @@ document.getElementById('button9').addEventListener('click', function () {
 document.getElementById('button_plus').addEventListener('click', function () {
     document.getElementById("display").value += '+';
 })
+document.getElementById('button_dot').addEventListener('click', function () {
+    document.getElementById("display").value += '.';
+})
 document.getElementById('button_minus').addEventListener('click', function () {
     document.getElementById("display").value += '-';
 })
@@ -67,4 +70,7 @@ document.getElementById('button_multiply').addEventListener('click', function ()
 })
 document.getElementById('button_divide').addEventListener('click', function () {
     document.getElementById("display").value += '/';
+})
+document.getElementById('button_delete').addEventListener('click', function () {
+    document.getElementById("display").value = document.getElementById("display").value.slice(0, -1);
 })
