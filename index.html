@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <div class="display">
+        <div>
+            <span id="result"></span>
+        </div>
+        <div>
+            <label>
+                <input id = "display" type="text" onkeypress='validate(event)'>
+            </label>
+        </div>
+    </div>
+    <div class="numpad">
+        <div>
+            <div id="7button">7</div>
+            <div id="8button">8</div>
+            <div id="9button">9</div>
+            <div id="+button">+</div>
+        </div>
+        <div>
+            <div id="4button">4</div>
+            <div id="5button">5</div>
+            <div id="6button">6</div>
+            <div id="-button">-</div>
+        </div>
+        <div>
+            <div id="1button">1</div>
+            <div id="2button">2</div>
+            <div id="3button">3</div>
+            <div id="*button">×</div>
+        </div>
+        <div>
+            <div id="button0">0</div>
+            <div id=".button">.</div>
+            <div id="/button">÷</div>
+        </div>
+        <div id="enter">enter</div>
+    </div>
+</div>
+</body>
+<script src>
+    function dfdf() {
+        document.getElementById("sex").innerText = '아이디'
+        document.getElementById("sex").style.display = 'block'
+    }
+
+    function pwd() {
+        document.getElementById("sex").innerText = '비번'
+        document.getElementById("sex").style.display = 'block'
+    }
+
+    document.getElementById('x').addEventListener('click', function () {
+        document.getElementById("sex").innerText = '비번'
+        document.getElementById("sex").style.display = 'none'
+    })
+
+</script>
+
+
+</html>

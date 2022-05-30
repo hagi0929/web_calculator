@@ -1,0 +1,52 @@
+.display {
+
+}
+.numpad div {
+    width: 200px;
+    background-color: #ECEFF1;
+    display: flex;
+    justify-content: center;
+
+}
+.numpad div div {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    user-select: none
+}
+.numpad div div:hover{
+    background-color: #CFD8DC;
+}
+#button0 {
+    width: 100px;
+}
+input[type=text] {
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    box-sizing: border-box;
+    border: 0;
+    background-color: #ECEFF1;
+    text-align: right;
+}
+input[type=text]:focus {
+    border: none;
+    outline: none;
+}
+#enter {
+    display: flex;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    user-select: none
+}
+#enter:hover{
+    background-color: #CFD8DC;
+}
+.input-error{
+    outline: 1px solid red;
+}
